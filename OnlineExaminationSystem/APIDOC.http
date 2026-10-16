@@ -1,0 +1,33 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST   http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "Which protocol is used for secure web communication?",
+    "option_a": "HTTP",
+    "option_b": "FTP",
+    "option_c": "HTTPS",
+    "option_d": "Telnet",
+    "correct_answer": "HTTPS"
+}
+
+###
+PUT   http://127.0.0.1:8000/questions/2/
+Content-Type: application/json
+
+{
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "option_a": "<p>",
+    "option_b": "<img>",
+    "option_c": "<a>",
+    "option_d": "<h1>",
+    "correct_answer": "<a>"
+}
+
+###
+DELETE    http://127.0.0.1:8000/questions/3/
+Content-Type: application/json
